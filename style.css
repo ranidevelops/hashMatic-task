@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans",sans-serif;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+.header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+
+}
+.header logo{
+    width: 100px;
+
+}
+.navbar-list{
+    display: flex;
+    gap: 70px;
+    list-style-type:none;
+    justify-content: space-between;
+
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:grey;
+    transition: all 0.3s;
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color:green;
+}
+button{
+    border-radius: 14px;
+    padding: 10px;
+    
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#home h1{
+ font-size: 70px;
+}
+#home p{
+    font-size: 20px;
+    padding-top: 18px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+.text{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text .ser1{
+    width: 50%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.text .img-box{
+    width: 50%;
+}
+.text .ser2{
+    width: 50%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+/* css for services section */
+.wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+
+
+}
+.wrapper p{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.wrapper h1{
+    font-size: 40px;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+    color: green;
+
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius:5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    margin:10px 4px;
+    box-shadow:0px 15px 30px 30px rgb(0, 0,0,0.2) ;
+    transition: 0.3s;
+
+}
+.card i{
+    margin:20px;
+    color: green;
+
+}
+.card h2{
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.card p{
+    color: #6c757d;
+    text-align: center;
+    font-size: 15px;
+
+       
+}
+.card:hover i,
+.card:hover p{
+    color:#fff;
+}
+.card:hover h2{
+    font-weight: 500;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg, 
+    rgba(38, 160, 72, 0.7) 0%,
+    #aaac76b3 100%);
+    background-size:cover;
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+    rgba(38,160,72,0.7) 0%,
+    rgba(255,0,82,0.7) 100%);
+    background-size:cover;
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7) 0%,
+    rgba(49, 148, 163, 0.7) 100%);
+    background-size:cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+    rgba(214, 133, 126, 0.7) 0%,
+    rgba(70, 45, 159, 0.7) 100%);
+    background-size:cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+    rgba(156, 103, 167, 0.7) 0%,
+    rgba(33, 76, 197, 0.7) 100%);
+    background-size:cover;
+}
+.card:nth-child(6):hover{
+    background:linear-gradient(45deg,
+    rgba(177, 255, 8, 0.7) 0%,
+    rgba(255,0,82,0.7) 100%);
+    background-size:cover;
+}
+
+/* project-section */
+
+#project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+
+}
+#project li{
+    list-style: none;
+    font-size: 15px;
+
+}
+.project-heading{
+    margin-top: 20px;
+    display:flex ;
+    flex-direction: column;
+}
+.project-heading h3{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-decoration: uppercase;
+    color: green;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.project-heading span{
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    word-spacing: 5px;
+}
+.project-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid rgba(237,237,237,0.6);
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.project-filter li{
+    margin-top: 10px;
+    padding: 5px 20px;
+    color: #9b9b9b;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+.project-filter-active{
+    background-color: #f0f0f0;
+    color: #272727;
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.project-box{
+    width: 330px;
+    padding: 15px;
+    border:px solid #eeeeee;
+    margin: 20px;
+}
+.project-box img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom:1px solid rgb(0,0,0,0.5) ;
+}
+.blog-heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.blog-heading span{
+    font-size: large;
+    word-spacing: 15px;
+    color: black;
+}
+.blog-heading h3{
+    font-size: 30px;
+    color: green;
+    font-weight: 400;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width:350px;
+    background-color: #ffffff;
+    border:1px solid #ececec;
+    margin:20px;
+}
+.blog-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    color:#272727;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color:green ;
+    font-size: 15px;
+    padding-top: 10px;
+}
